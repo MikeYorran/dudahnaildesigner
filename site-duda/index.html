@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Mike Yorra"
+
+  <title>Duda Torres - Nail Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fffafc;
+      color: #3b3b3b;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #fff;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #ffe4ec;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #a7004d;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about, .services, .contact {
+      text-align: center;
+    }
+
+    .about h2, .services h2, .gallery h2, .contact h2 {
+      color: #a7004d;
+      font-size: 2rem;
+    }
+
+    .services i {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #d1005d;
+    }
+
+    .services .box {
+      display: inline-block;
+      width: 250px;
+      margin: 20px;
+      background: #fff0f5;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ffb6c1;
+      border-radius: 8px;
+    }
+
+    .contact button {
+      background-color: #a7004d;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      background-color: #a7004d;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #8c0040;
+    }
+
+    footer {
+      background-color: #ffe4ec;
+      text-align: center;
+      padding: 15px;
+      color: #a7004d;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .services .box, .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Duda Torres</h1>
+    <p>Nail Designer Profissional</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre" class="about">
+    <h2>Sobre Mim</h2>
+    <p>Sou a Eduarda Torres, apaixonada por unhas e beleza! Trabalho com amor e dedicação, oferecendo serviços de alta 
+        qualidade para valorizar ainda mais sua autoestima, Trabalhando com amor carinho e dedicação para tornar esse momento especial no seu dia.</p>
+  </section>
+
+  <section id="servicos" class="services">
+    <h2>Serviços</h2>
+    <div class="box">
+      <i class="fas fa-hand-sparkles"></i>
+      <h3>Manicure & Pedicure</h3>
+      <p>Cuidados completos para suas unhas com carinho e higiene.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Decoração de Unhas</h3>
+      <p>Desenhos personalizados, aplicação de pedrarias e muito mais.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-fill-drip"></i>
+      <h3>Alongamento</h3>
+      <p>Unhas em gel ou fibra com acabamento impecável e duradouro.</p>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h2>Galeria</h2>
+    <img src="imagens/unha-francesa.jpeg" alt="Unha 1" />
+    <img src="imagens/Modelo-almond.jpeg" alt="Unha 2" />
+    <img src="imagens/almod-pontudinha.jpeg" alt="Unha 3" />
+    <img src="imagens/Square.jpeg" alt="Unha 4" />
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Fale Comigo</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="buttons">
+      <a href="https://wa.me/5566996128075" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/eduardatorresz?igsh=N2c1cnN6OWdjMGVs" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://client.tuaagenda.com/c/EduardaNailDesigner10" target="_blank"><i class="fas fa-calendar-check"></i> Agende Online</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Duda Torres | Nail Designer • Instagram: @dudatorres.nails
+  </footer>
+
+</body>
+</html>
